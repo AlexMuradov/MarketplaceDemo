@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/static/css/libs.min.css">
+    <link rel="stylesheet" href="/static/css/daterangepicker.min.css">
+    <link rel="stylesheet" href="/static/css/main_alt.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <header class="payment__head">
+        <div class="container">
+            <div class="payment__head-row">
+                <a href="#" class="logo">Xx
+                    <span class="logo-span">.</span>
+                </a>
+                <div class="step-mob">{{Step1of3}}</div>
+                <button class="payment__close close"></button>
+                <ul class="step">
+                    <li class="step-item">
+                        <a href="#" class="step-link active">
+                            1. {{AcceptRules}}
+                            <svg class="step-arrow">
+                                <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="step-item">
+                        <a href="#" class="step-link">
+                            2. {{IdentifyGuest}}
+                            <svg class="step-arrow">
+                                <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="step-item">
+                        <a href="#" class="step-link">
+                            3. {{ConfirmAndPay}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper-content">
+        <div class="container">
+            <div class="payment">
+                <div class="payment__content">
+                    <h2 class="title">{{AcceptRules}}</h2>
+                    <div class="payment__block">
+                        <div class="like-box">
+                            <img src="/static/img/medical.svg" alt="medical" class="like-box__icon">
+                            <div class="like-box__col">
+                                <p class="like-box__title" id="ListingTitle">{{GreatPrice}}</p>
+                                <p class="like-box__text" id="ListingText">{{BestPriceText}}</p>
+                            </div>
+                        </div>
+                        <p class="text-17" id="TotalNights"></p>
+                        <div class="payment__info">
+                            <div class="payment__info-item">
+                                <p class="text-16" id="ArrivalDate"></p>
+                                <p class="payment__info-text" id="CheckIn"></p>
+                            </div>
+                            <div class="payment__info-item">
+                                <p class="text-16" id="DepartureDate"></p>
+                                <p class="payment__info-text" id="CheckOut"></p>
+                            </div>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item" id="CheckInType"></li>
+                        </ul>
+                    </div>
+                    <div class="remember">
+                        <p class="text-17">{{RememberWhat}}</p>
+                        <div class="remember__row">
+                            
+                        </div>
+                    </div>
+                    <div class="more">
+                        Подробнее
+                        <svg class="more-arrow">
+                            <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                    <div class="read-more">
+                        <p class="read-text">
+                            {{CancellationText}} {{CancellationText}} 
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-red continue">{{AcceptAndProceed}}
+                            <svg class="arrow">
+                                <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </a>
+                    <div class="like-box">
+                        <img src="/static/img/medical.svg" alt="medical" class="like-box__icon">
+                        <div class="like-box__col">
+                            <p class="like-box__title">Людям нравится это объявление</p>
+                            <p class="like-box__text">На прошлой неделе этими датами интересовались другие люди (5)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment__right">
+                    <div class="payment__form">
+                        <div class="payment__form-head">
+                            <img src="/static/img/foto.jpg" alt="img" class="payment__form-img">
+                            <div class="payment__form-col">
+                                <p class="text-16">Просторная и современная квартира в центре города</p>
+                                <div class="star">
+                                    <img src="/static/img/star-2.svg" alt="star" class="img-star">
+                                    <span class="text-15 c-gray-medium weight-normal">5,0 (98 отзывов)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment__form-content">
+                            <ul class="payment__form-ul">
+                                <li class="payment__form-li">
+                                    <img src="/static/img/calendar.svg" alt="calendar" class="icon-calendar">
+                                    <div class="payment__form-info">
+                                        <p class="payment__form-gray">Прибытие и выезд</p>
+                                        <p class="payment__form-blue">10 сентября - 20 сентября</p>
+                                    </div>
+                                </li>
+                                <li class="payment__form-li">
+                                    <img src="/static/img/person.svg" alt="person" class="icon-person">
+                                    <div class="payment__form-info">
+                                        <p class="payment__form-gray">Гостей</p>
+                                        <p class="payment__form-blue">3 человека</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="payment__form-ul">
+                                <li class="payment__form-li">
+                                    <div class="counts">
+                                        <p class="counts-item">878₽ x 10 ночей</p>
+                                        <p class="counts-item">$450</p>
+                                    </div>
+                                </li>
+                                <li class="payment__form-li">
+                                    <div class="counts">
+                                        <p class="counts-item">Скидка 10% (за неделю)
+                                            <span class="question">
+                                                <span class="tooltip"></span>
+                                            </span>
+                                        </p>
+                                        <p class="counts-item">-$45</p>
+                                    </div>
+                                </li>
+                                <li class="payment__form-li">
+                                    <div class="counts">
+                                        <p class="counts-item">Плата за уборку
+                                            <span class="question">
+                                                <span class="tooltip">При отмене не позднее чем за 14 дней до прибытия вы получите полный возврат и любовь.</span>
+                                            </span>
+                                        </p>
+                                        <p class="counts-item">$15</p>
+                                    </div>
+                                </li>
+                                <li class="payment__form-li">
+                                    <div class="counts">
+                                        <p class="counts-total">Итого</p>
+                                        <p class="counts-total"> $420</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-red">ЗАБРОНИРОВАТЬ</a>
+                            <div class="payment__form-bottom">
+                                <p class="text-16">Бесплатная отмена до 27 августа</p>
+                                <p class="payment__form-text">
+                                    При отмене не позднее чем за 14 дней до прибытия вы получите полный возврат. <a href="#" class="more-link"> Подробнее</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="footer footer-small">
+    <div class="container">
+        <div class="footer-bottom__row">
+            <a href="#" class="logo">Xx
+                <span class="logo-span">.</span>
+            </a>
+            <div class="footer__row">
+                <a href="#" class="footer__select">$ USD
+                    <svg class="footer__select-arrow">
+                        <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__select">ru
+                    <svg class="footer__select-arrow">
+                        <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div>
+    <div class="popups popup__lang-curr">
+        <div class="popup">
+            <div class="popup__head">
+                <h2 class="popup__head-title">Язык и Валюта</h2>
+                <button type="button" class="close"></button>
+            </div>
+            <div class="popup-content">
+                <div class="popup__section">
+                    <h4 class="popup__title">Валюта</h4>
+                    <div class="popup__row">
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">EUR</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">USD</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">AZN</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">UAH</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">RUB</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">BEL</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">GEO</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="curr" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">EAD</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="popup__section">
+                    <h4 class="popup__title">Язык</h4>
+                    <div class="popup__row">
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Английский</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Французский</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Немецкий</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Японский</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="popup__bottom">
+                    <a href="#" class="btn btn-small">SAVE CHANGES
+                        <svg class="arrow">
+                            <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="popups popup__additional-filters">
+        <div class="popup positionTop">
+            <div class="popup__head">
+                <h2 class="popup__head-title">Дополнительные фильтры</h2>
+                <button type="button" class="close"></button>
+            </div>
+            <form class="popup-content">
+                <div class="popup__section">
+                    <label class="label-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <span class="check"></span>
+                        <span class="check-text">Возможность отмены</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <span class="check"></span>
+                        <span class="check-text">Опытный хозяин
+                   <span class="check-span"> Останавливайтесь у самых гостеприимных хозяев <a href="#" class="c-blue">Подробнее</a></span>
+
+                </span>
+                    </label>
+                </div>
+                <div class="popup__section">
+                    <h4 class="popup__title">Удобства</h4>
+                    <div class="popup__row">
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Кухня</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Шампунь</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Отопление</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Кондиционер</span>
+                        </label>
+                    </div>
+                    <a href="#" class="link-item">Все удобства
+                        <svg class="arrow c-blue">
+                            <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="popup__section">
+                    <h4 class="popup__title">Дополнительные удобства</h4>
+                    <div class="popup__row">
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Бесплатная <br>парковка</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Спортзал</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Джакузи</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Бассейн</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="popup__section">
+                    <h4 class="popup__title">Цена</h4>
+                    <div class="popup__row">
+                        <div class="popup__price" >
+                            <p>От</p>
+                            <input type="number" class="popup__input">
+                        </div>
+                        <div class="popup__price">
+                            <p>До</p>
+                            <input type="number" class="popup__input">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popup__section">
+                    <h4 class="popup__title">Язык хозяина</h4>
+                    <div class="popup__row">
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Английский</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Французский</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Немецкий</span>
+                        </label>
+                        <label class="label-checkbox">
+                            <input type="radio" name="lang" class="checkbox">
+                            <span class="check"></span>
+                            <span class="check-text">Японский</span>
+                        </label>
+                    </div>
+                    <a href="#" class="link-item">все языки
+                        <svg class="arrow c-blue">
+                            <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="popup__bottom popup__bottom__between">
+                    <button type="reset" class="link-item">очистить <span class="close"></span></button>
+                    <button type="submit" class="btn btn-small">показать варианты
+                        <svg class="arrow">
+                            <use xlink:href="/static/img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/libs.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+{{JsLocalizationVars}}
+{{JsLocalizationScript}}
+</script>
+</body>
+</html>

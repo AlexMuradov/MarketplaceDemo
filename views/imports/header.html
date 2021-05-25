@@ -1,0 +1,20 @@
+<header class="header header_v2">
+    <div class="container_v2">
+      <div class="header__between"><a class="logo" href="/">Xx<span class="logo-span">.</span></a>
+        <nav class="header-nav">
+          <ul class="menu">
+            <li class="menu-item hide-sm"><a class="link c-dark" href="/<?php echo $lang; ?>/page.terms" id="addProperty"><span class="add"></span><span class="res_HeadAddApt"></span></a></li>
+            <!-- <li class="menu-item" id="login"><a class="link link-sign-in c-dark" href="/<?php echo $lang; ?>/auth.signin" id="Login_Profile"><span class="res_HeadEnter"></span></a></li> -->
+            <li class="menu-item" id="login">
+              <form action="/<?php echo $lang; ?>/auth.signin" method="POST">
+                <input type="hidden" name="redirect">
+                <button type="submit" class="link link-sign-in c-dark res_HeadEnter" href="#" id="Login_Profile"></button>
+              </form>
+            </li>
+            <li class="menu-item" id="profile"><a class="link c-dark relative" href="/<?php echo $lang; ?>/cabinet.profile"> <img src="/static/v2/img/user-profile.svg" alt="profile"><span class="counter"></span></a></li>
+          </ul>
+        </nav>
+        <button class="burger" type="button"><span class="burger-line burger-top"></span><span class="burger-line burger-bottom"></span></button>
+      </div>
+    </div>
+  </header>

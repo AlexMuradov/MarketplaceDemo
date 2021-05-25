@@ -1,0 +1,1 @@
+Thank you for your booking. Appertement owner contacts: {{0}}, {{1}}, {{2}}

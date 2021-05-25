@@ -1,0 +1,70 @@
+.bin { 
+    position: relative; 
+    margin-right: 1px;
+}
+
+.bin-color { background-color: #DBE0E2; }
+.bin-color-selected { background-color: #000000b0;}
+.bin-color-optimal { background-color: #CAF9F6; }
+.bin-color-optimal-selected { background-color: #01E2D4; }
+
+.in-range { z-index: 1;}
+.out-of-range { z-index: 0;}
+.selected-range { text-align: center; }
+
+.ui-slider-horizontal { height: .3em; }
+.ui-slider .ui-slider-handle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default
+{
+    border: 1px solid #000000;
+    background: #ffffff url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active
+{
+    border: 1px solid #000000;
+    background: #282829 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.priceSlider .tooltip > .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+    z-index: 100;
+    opacity: 100%;
+    border-radius: 5px;
+}
+
+.priceSlider .tooltip:hover > .tooltiptext {
+    visibility: visible;
+   
+}
+
+.priceSlider > p {
+    font-size: 13px;
+    font-family:  "Gilroy-regular";
+    padding: 20px;
+  }
+
+.display-none{
+    display: none;
+}
+
+

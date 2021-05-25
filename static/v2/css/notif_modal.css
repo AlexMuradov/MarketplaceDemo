@@ -1,0 +1,43 @@
+.nm_content{
+    position: fixed;
+    background: #292C31;
+    opacity: 0.9;
+    z-index: 1000;
+    height: 15vh;
+    width: 100%;
+    /* top: 90vh; */
+    bottom: 0;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.nm_content button{
+    background: #ff3535;
+    border: 0;
+    color: #fff;
+    font-family: 'Gilroy-SemiBold';
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.nm_footer {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: flex-end;
+    left: 0;
+}
+
+.nm_header {
+    font-size: 1.35rem;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 10px;
+}
+
+.nm_text {
+    font-size: 0.875rem;
+    font-family: 'Gilroy-Light';
+}

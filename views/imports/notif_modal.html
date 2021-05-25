@@ -1,0 +1,13 @@
+<div class="nm_content" style="display: none;">
+    <div class="nm_header">Some notificatoin</div>
+    <div class="nm_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, corporis.</div>
+    <div class="nm_footer">
+        <button class="nm_close">Ok</button>
+    </div>
+</div>
+
+<script>
+    $(".nm_close").on("click", () => {
+        $(".nm_content").hide();
+    })
+</script>

@@ -1,0 +1,1 @@
+Your verication code is {{0}}
