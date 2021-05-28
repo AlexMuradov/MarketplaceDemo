@@ -68,7 +68,7 @@ Class Language {
         "Getmails" => "Получать уведомления на почту",
         "OnlyFreeProperties" => "Только свободные квартиры",
         "Where" => "Куда?",
-        "Nearby" => "Найти жилье поблизости"
+        "Nearby" => "Try: Baku"
     );
 
     static $PropertyRulesList = array(
