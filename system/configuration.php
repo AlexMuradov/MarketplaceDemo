@@ -1,10 +1,10 @@
 <?php
-define ('DB_HOST',  'localhost');
-define ('DB_NAME',  'xx');
-define ('DB_USER',  'web1');
-define ('DB_PASS',  'fscaz1.');
+define ('DB_HOST',  getenv('DB_HOST'));
+define ('DB_NAME',  getenv('DB_NAME'));
+define ('DB_USER',  getenv('DB_USER'));
+define ('DB_PASS',  getenv('DB_PASS'));
 define ('XX', DIRECTORY_SEPARATOR);
-define ('HOME', "/var/www/html");
+define ('HOME', getenv('WEB_DOCUMENT_ROOT'));
 define ('DEFAULT_LANGUAGE', "ru");
 date_default_timezone_set('UTC');
 define ('DEFAULT_CURRENCY', 4); // EUR
