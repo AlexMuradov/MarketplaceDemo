@@ -37,9 +37,6 @@ Class Home {
 
         $Titles = $Language->Import("LngTitles");
         $this->_view->set("title", $Titles['home']);
-        
-        // Shutdown
-        exit("Website is closed.");
 
         // Выходная точка буферизации
         $this->_view->output();
