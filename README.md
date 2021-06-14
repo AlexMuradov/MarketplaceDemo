@@ -85,7 +85,7 @@ Class Home {
 ```
 * Views
 
-Views are located under /views/ folder and have and using simple custom templating [engine](https://github.com/alik116/MarketplaceDemo/blob/master/system/view.php) similar to moustahe.js Html files are rendered and every back-end variable can be accessed, looped, and cached via double brackets:
+Views are located under /views/ folder and using simple custom templating [engine](https://github.com/alik116/MarketplaceDemo/blob/master/system/view.php) similar to moustahe.js Html files are rendered and every back-end variable can be accessed, looped, and cached via double brackets:
 
 ```html
 <span>
@@ -98,8 +98,6 @@ Views are located under /views/ folder and have and using simple custom templati
 * Alex Muradov (MVC)
 * Fatalizade Farid (JS and Controllers)
 * Elvin Gasanov (Front-End)
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
