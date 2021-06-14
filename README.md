@@ -1,7 +1,3 @@
-# Rental Marketplace application 
-
-Foobar is a Python library for dealing with word pluralization.
-
 ## Installation
 
 To install infrastructure place go to the [installation guide](https://github.com/alik116/TerraformDocker_Marketplace)
