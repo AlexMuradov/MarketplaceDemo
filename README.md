@@ -5,7 +5,7 @@ To install infrastructure place go to the [installation guide](https://github.co
 
 ## Examples
 
-Please note that this MVC does use dynamic routing so it is not neccessary to specify specific routes. To understand more about routing please [see source code of routing file.](https://github.com/alik116/MarketplaceDemo/blob/master/system/request.php)
+Please note that this MVC does use dynamic routing so it is not neccessary to specify routes. To understand more about routing please [see source code of routing file.](https://github.com/alik116/MarketplaceDemo/blob/master/system/request.php)
 
 * Model
 
